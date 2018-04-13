@@ -79,7 +79,7 @@ else
     else
         indmodels = PRT.model(modelid(1)).input.indmodels;
     end
-    [Phi_all,ID,fid] = prt_getKernelModel(PRT,prt_dir,modelid(1),indmodels);
+    [Phi_all,ID,fid] = prt_getKernelModel(PRT,prt_dir,modelid(1));
     
     %get number of classes
     if strcmpi(PRT.model(modelid(1)).input.type,'classification')
