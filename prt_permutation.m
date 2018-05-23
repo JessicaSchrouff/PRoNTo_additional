@@ -143,7 +143,7 @@ else
         end
         
         fprintf(['Permutation (out of %d):',repmat(' ',1,ceil(log10(n_perm))),'%d'],n_perm, 1);
-        parfor p=1:n_perm
+        for p=1:n_perm
             
             % Counter of permutations to be updated
             if p>1
